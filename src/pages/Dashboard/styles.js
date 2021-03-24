@@ -17,6 +17,17 @@ export const Title = styled.h1`
     margin: 3% 0 5% 0;
 `;
 
+export const InputSearch = styled.input`
+    font-size: 1rem;
+    color: #454545;
+
+    width: 50%;
+    margin-bottom: 3%;
+    padding: 1%;
+
+    border-color: #6c6c6c;
+`; 
+
 export const MembersList = styled.div`
     display: flex;
     flex-diretion: row;
@@ -45,4 +56,11 @@ export const MemberLogin = styled.p`
     font-size: 1rem;
     font-weight: 600;
     color: #6c6c6c;
+`;
+
+export const LoginNotFoundMessage = styled.p`
+    font-family: Sans-Serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #4f4f4f;  
 `;
