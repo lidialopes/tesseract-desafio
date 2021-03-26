@@ -38,7 +38,7 @@ export const MembersList = styled.div`
     width: 70%;
 `;
 
-export const MemberInfo = styled.div`
+export const MemberContainer = styled.div`
     display: flex;    
     flex-direction: column;
     align-items: center;
@@ -63,4 +63,43 @@ export const LoginNotFoundMessage = styled.p`
     font-size: 1.5rem;
     text-align: center;
     color: #4f4f4f;  
+    margin-top: 10%;
+`;
+
+export const PopupContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    justify-self: center;
+
+    margin: auto;
+    width: 50vw;
+`;
+
+export const PopupImage = styled.img`
+    width: 20vw;
+    min-width: 100px;
+    border-radius: 50%;
+    align-self: center;
+`;
+
+export const PopupInfo = styled.div`
+    display: flex;
+    flex-diretion: row;
+    flex-wrap: wrap;
+    
+    align-self: center;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    width: 100%;
+    margin-top: 5%;
+`;
+export const PopupText = styled.p`
+    font-family: Sans-Serif;
+    font-size: 1rem;
+    color: #4f4f4f;
+
+    width: fit-content;
 `;
