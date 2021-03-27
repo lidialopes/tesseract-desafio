@@ -42,7 +42,16 @@ export const MemberContainer = styled.div`
     display: flex;    
     flex-direction: column;
     align-items: center;
-    margin: 2%;
+
+    margin: 1%;
+
+    padding: 1% 2% 0 2%;
+
+    &:hover{
+        cursor: pointer;
+        border: 1px solid #bdbdbd; 
+        border-radius: 5%;
+    }
 `;
 
 export const MemberImage = styled.img`
