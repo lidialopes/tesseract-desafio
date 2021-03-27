@@ -11,7 +11,7 @@ import {
     MemberImage, 
     MembersList, 
     MemberLogin, 
-    LoginNotFoundMessage,
+    MembersListMessage,
     PopupContainer,
     PopupImage,
     PopupInfo,
@@ -22,6 +22,7 @@ function Dashboard(){
     const [members, setMembers] = useState([]);
     const [filteredMembers, setFilteredMembers] = useState([]);
     const [inputValue, setInputValue] = useState('');
+    const [message, setMessage] = useState('Carregando lista de membros...');
     
     const [memberInfo, setMemberInfo] = useState();
     const [open, setOpen] = useState(false);
@@ -37,6 +38,7 @@ function Dashboard(){
         });
         setFilteredMembers(filtered);
         setInputValue(text);
+        setMessage('Login não encontrado');
     }
 
     function handleOpenModal(login){
@@ -83,7 +85,7 @@ function Dashboard(){
                             <MemberLogin>{member.login}</MemberLogin>
                         </MemberContainer>
                     )) 
-                    : (<LoginNotFoundMessage>Login não encontrado</LoginNotFoundMessage>)
+                    : (<MembersListMessage>{message}</MembersListMessage>)
                 }
             </MembersList>
             <Modal open={open} onClose={closeModal} center>

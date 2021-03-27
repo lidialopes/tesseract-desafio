@@ -58,7 +58,7 @@ export const MemberLogin = styled.p`
     color: #6c6c6c;
 `;
 
-export const LoginNotFoundMessage = styled.p`
+export const MembersListMessage = styled.p`
     font-family: Sans-Serif;
     font-size: 1.5rem;
     text-align: center;
